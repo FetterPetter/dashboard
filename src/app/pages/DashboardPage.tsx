@@ -95,10 +95,13 @@ export function DashboardPage() {
       <div className="bottom-row">
         <div className="card">
           <h4>Konverteringsrate</h4>
-          <Paigraf
-            salg={statsData[activeTab].salg}
-            visning={statsData[activeTab].visning}
-          />
+          <div className="pai-row">
+            <Paigraf
+              salg={statsData[activeTab].salg}
+              visning={statsData[activeTab].visning}
+            />
+            <p className="pai-p">{activeTab}</p>
+          </div>
         </div>
 
         <div className="card">

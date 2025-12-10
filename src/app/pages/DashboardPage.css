@@ -9,7 +9,7 @@
   --border-card: #ebebf3;
 
   min-height: 100vh;
-  padding: 3rem 5rem 4rem;
+  padding: 1rem 15rem 4rem;
   background: radial-gradient(
     circle at top left,
     #fff5fb 0,
@@ -26,16 +26,21 @@
 
 .main-grid {
   display: grid;
-  grid-template-columns: 1.1fr 1.2fr;
+  grid-template-columns: 1.5fr 3fr;
+
   gap: 2rem;
   margin-bottom: 2.5rem;
 }
 
-.left-section,
-.right-section {
+.left-section {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+}
+.right-section {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 3.5rem;
 }
 
 .card {
@@ -43,7 +48,7 @@
   border-radius: 18px;
   border: 1px solid var(--border-card);
   box-shadow: 0 14px 30px rgba(15, 23, 42, 0.05);
-  padding: 1.25rem 1.5rem;
+  padding: 0rem 1.5rem;
 }
 
 .card h4 {
@@ -51,7 +56,11 @@
   font-weight: 600;
   margin-bottom: 0.9rem;
 }
-
+.pai-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 12px;
+}
 .tabs {
   display: inline-flex;
   background: #f2f2f7;
@@ -92,7 +101,8 @@
   border-radius: 18px;
   border: 1px solid var(--border-card);
   box-shadow: 0 10px 26px rgba(15, 23, 42, 0.04);
-  padding: 1rem 1.25rem;
+  padding: 0.2rem 1.25rem;
+  text-align: center;
   transition:
     transform 0.15s ease,
     box-shadow 0.15s ease;
@@ -131,7 +141,7 @@
 
 .produkter img {
   width: 100%;
-  height: 300px;
+  max-width: 90px;
   object-fit: cover;
   border-radius: 14px;
   display: block;
@@ -194,7 +204,7 @@
 
 .bottom-row {
   display: grid;
-  grid-template-columns: 0.9fr 1.4fr;
+  grid-template-columns: 1.5fr 3fr;
   gap: 2rem;
 }
 
