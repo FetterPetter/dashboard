@@ -8,7 +8,7 @@
   --bg-card: #ffffff;
   --border-card: #ebebf3;
 
-  min-height: 100vh;
+  /*min-height: 100vh;*/
   padding: 1rem 5rem 4rem;
   background: radial-gradient(
     circle at top left,
@@ -17,6 +17,9 @@
     #eef1fb 100%
   );
   color: var(--text-main);
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .main-grid {
