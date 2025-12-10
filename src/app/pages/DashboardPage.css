@@ -121,12 +121,14 @@
 
 .produkter {
   display: flex;
-  gap: 1.3rem;
+  justify-content: space-around;
+  gap: 2rem;
 }
 
 .produkter > div {
   position: relative;
-  flex: 1;
+  flex: 0 0 auto;
+  /*flex: 1;*/
   border-radius: 14px;
   overflow: hidden;
   background: transparent;
