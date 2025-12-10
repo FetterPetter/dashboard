@@ -19,11 +19,6 @@
   color: var(--text-main);
 }
 
-.dashboard h2 {
-  font-size: 1.6rem;
-  margin-bottom: 1.5rem;
-}
-
 .main-grid {
   display: grid;
   grid-template-columns: 1.5fr 3fr;

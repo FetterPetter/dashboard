@@ -19,8 +19,6 @@ export function DashboardPage() {
 
   return (
     <div className="dashboard">
-      <h2>Overview</h2>
-
       <div className="main-grid">
         <div className="left-section">
           <div className="tabs">
