@@ -16,6 +16,7 @@
   "devDependencies": {
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
+    "@types/react-router-dom": "^5.3.3",
     "husky": "^9.1.7",
     "prettier": "^3.7.4",
     "typescript": "^5.9.3",
@@ -24,6 +25,7 @@
   "dependencies": {
     "react": "^19.2.1",
     "react-dom": "^19.2.1",
+    "react-router-dom": "^7.10.1",
     "recharts": "^3.5.1",
     "vitest": "^4.0.15"
   }

@@ -1,5 +1,6 @@
 // src/app/pages/DashboardPage.tsx
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./DashboardPage.css";
 import Salechart from "../components/Salechart.js";
 import { Paigraf } from "../components/Paigraf.js";
@@ -8,6 +9,7 @@ type Tab = "today" | "month" | "year";
 
 export function DashboardPage() {
   const [activeTab, setActiveTab] = useState<Tab>("today");
+  const navigate = useNavigate();
 
   const statsData = {
     today: { visning: 25, handlekurv: 12, salg: 8 },
@@ -59,22 +61,32 @@ export function DashboardPage() {
         </div>
 
         <div className="right-section">
-          <div className="card">
+          <div
+            className="card top-solgte-card"
+            role="button"
+            tabIndex={0}
+            onClick={() => navigate("/products")}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                navigate("/products");
+              }
+            }}
+          >
             <h4>Top solgte produkter</h4>
             <div className="produkter">
               <div>
                 <div className="tall">1</div>
-                <img src="/dashboard/images/jakke.PNG" alt="jakke" />
+                <img src={`${imageBase}images/jakke.PNG`} alt="jakke" />
               </div>
 
               <div>
                 <div className="tall">2</div>
-                <img src="/dashboard/images/genser.PNG" alt="genser" />
+                <img src={`${imageBase}images/genser.PNG`} alt="genser" />
               </div>
 
               <div>
                 <div className="tall">3</div>
-                <img src="/dashboard/images/sko.PNG" alt="sko" />
+                <img src={`${imageBase}images/sko.PNG`} alt="sko" />
               </div>
             </div>
           </div>

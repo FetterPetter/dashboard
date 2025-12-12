@@ -1,0 +1,41 @@
+.products-chart h2 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.products-chart-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.products-chart-row {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.products-chart-label {
+  font-size: 0.85rem;
+}
+
+.products-chart-bar-wrapper {
+  background: #f5f6fb;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.products-chart-bar {
+  height: 22px;
+  border-radius: 999px;
+  background: #b35b63;
+  display: flex;
+  align-items: center;
+  padding-left: 0.5rem;
+}
+
+.products-chart-bar-value {
+  font-size: 0.75rem;
+  color: white;
+}
