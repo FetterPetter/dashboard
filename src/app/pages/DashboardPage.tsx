@@ -16,7 +16,11 @@ export function DashboardPage() {
     month: { visning: 520, handlekurv: 240, salg: 150 },
     year: { visning: 6300, handlekurv: 2900, salg: 1700 },
   };
-
+  const tabTexts = {
+    today: "i dag",
+    month: "denne måneden",
+    year: "i år",
+  };
   const imageBase = import.meta.env.BASE_URL; // "/" locally, "/dashboard/" on GitHub Pages
   console.log(imageBase);
   return (
@@ -104,13 +108,12 @@ export function DashboardPage() {
 
       <div className="bottom-row">
         <div className="card">
-          <h4>Konverteringsrate</h4>
+          <h4>Konverteringsrate {tabTexts[activeTab]}</h4>
           <div className="pai-row">
             <Paigraf
               salg={statsData[activeTab].salg}
               visning={statsData[activeTab].visning}
             />
-            <p className="pai-p">{activeTab}</p>
           </div>
         </div>
 

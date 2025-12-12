@@ -1,5 +1,5 @@
 import React from "react";
-import { PieChart as RePieChart, Pie, Cell, Label } from "recharts";
+import { PieChart as RePieChart, Pie, Cell, Label, Tooltip } from "recharts";
 
 interface PaigrafProps {
   salg: number;
@@ -36,6 +36,7 @@ export function Paigraf({ salg, visning }: PaigrafProps) {
           fill="#ef4444"
         />
       </Pie>
+      <Tooltip formatter={(value, name) => [`${value}`, name]} />
     </RePieChart>
   );
 }
