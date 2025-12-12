@@ -18,7 +18,7 @@ export function DashboardPage() {
   };
 
   const imageBase = import.meta.env.BASE_URL; // "/" locally, "/dashboard/" on GitHub Pages
-
+  console.log(imageBase);
   return (
     <div className="dashboard">
       <div className="main-grid">
@@ -76,17 +76,17 @@ export function DashboardPage() {
             <div className="produkter">
               <div>
                 <div className="tall">1</div>
-                <img src={`${imageBase}images/jakke.PNG`} alt="jakke" />
+                <img src={`${imageBase}/images/jakke.PNG`} alt="jakke" />
               </div>
 
               <div>
                 <div className="tall">2</div>
-                <img src={`${imageBase}images/genser.PNG`} alt="genser" />
+                <img src={`${imageBase}/images/genser.PNG`} alt="genser" />
               </div>
 
               <div>
                 <div className="tall">3</div>
-                <img src={`${imageBase}images/sko.PNG`} alt="sko" />
+                <img src={`${imageBase}/images/sko.PNG`} alt="sko" />
               </div>
             </div>
           </div>
