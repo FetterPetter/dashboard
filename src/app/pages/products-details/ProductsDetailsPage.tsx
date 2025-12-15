@@ -16,7 +16,7 @@ const ProductsDetailsPage: React.FC = () => {
   });
 
   const products = useMemo(() => {
-    let result = [...topProducts];
+    const result = [...topProducts];
 
     if (filters.sort === "Mest solgt") {
       result.sort((a, b) => b.sales - a.sales);
@@ -31,13 +31,9 @@ const ProductsDetailsPage: React.FC = () => {
 
       <FiltersBar filters={filters} onChange={setFilters} />
 
-      <div className="products-details-row">
-        <div className="card">
-          <ProductsChart products={products} />
-        </div>
-        <div className="card">
-          <TopProductsTable products={products} />
-        </div>
+      <div className="products-details-content">
+        <ProductsChart products={products} />
+        <TopProductsTable products={products} />
       </div>
     </div>
   );
