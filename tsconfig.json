@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "module": "ESNext",
-    "moduleResolution": "bundler", // 👈 add this
+    "moduleResolution": "bundler",
     "target": "ESNext",
     "types": [],
 
@@ -13,7 +13,7 @@
     "exactOptionalPropertyTypes": true,
 
     "strict": true,
-    "jsx": "react-jsx", // better for React 17+
+    "jsx": "react-jsx",
     "verbatimModuleSyntax": true,
     "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
