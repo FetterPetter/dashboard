@@ -64,7 +64,7 @@ export const FiltersBar: React.FC<FiltersBarProps> = ({
       <div className="filters-bar__group">
         <button
           type="button"
-          className="filters-bar__pill"
+          className={`filters-bar__pill ${openMenu === "collection" ? "filters-bar__pill--active" : ""}`}
           onClick={() => toggleMenu("collection")}
         >
           Kolleksjon{filters.collection ? `: ${filters.collection}` : ""}
@@ -75,7 +75,7 @@ export const FiltersBar: React.FC<FiltersBarProps> = ({
       <div className="filters-bar__group">
         <button
           type="button"
-          className="filters-bar__pill"
+          className={`filters-bar__pill ${openMenu === "category" ? "filters-bar__pill--active" : ""}`}
           onClick={() => toggleMenu("category")}
         >
           Kategori{filters.category ? `: ${filters.category}` : ""}
@@ -86,7 +86,7 @@ export const FiltersBar: React.FC<FiltersBarProps> = ({
       <div className="filters-bar__group">
         <button
           type="button"
-          className="filters-bar__pill"
+          className={`filters-bar__pill ${openMenu === "period" ? "filters-bar__pill--active" : ""}`}
           onClick={() => toggleMenu("period")}
         >
           Periode{filters.period ? `: ${filters.period}` : ""}
@@ -97,7 +97,7 @@ export const FiltersBar: React.FC<FiltersBarProps> = ({
       <div className="filters-bar__group">
         <button
           type="button"
-          className="filters-bar__pill"
+          className={`filters-bar__pill ${openMenu === "sort" ? "filters-bar__pill--active" : ""}`}
           onClick={() => toggleMenu("sort")}
         >
           Sorter{filters.sort ? `: ${filters.sort}` : ""}
