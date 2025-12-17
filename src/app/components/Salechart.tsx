@@ -39,9 +39,9 @@ const Salechart: React.FC = () => {
           <XAxis dataKey="month" />
           <YAxis tickFormatter={(v) => `${v / 1000}k`} />
           <Tooltip
-            formatter={(value: number) => {
-              return value.toLocaleString("nb-NO");
-            }}
+            formatter={(value) =>
+              typeof value === "number" ? value.toLocaleString("nb-NO") : value
+            }
           />
 
           <Legend />
