@@ -1,4 +1,3 @@
-// src/app/pages/DashboardPage.tsx
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./DashboardPage.css";
@@ -21,7 +20,7 @@ export function DashboardPage() {
     month: "denne måneden",
     year: "i år",
   };
-  const imageBase = import.meta.env.BASE_URL; // "/" locally, "/dashboard/" on GitHub Pages
+  const imageBase = import.meta.env.BASE_URL;
   console.log(imageBase);
   return (
     <div className="dashboard">
